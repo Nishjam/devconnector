@@ -9,7 +9,6 @@ class Register extends Component {
       email: '',
       password: '',
       password2: '',
-      errors : {}
     };
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
@@ -48,7 +47,7 @@ class Register extends Component {
                    name="name" required 
                    value ={ this.state.name } onChange={ this.onChange } 
                    />
-                   {errors}
+                   
                   </div>
                   <div className="form-group">
                    <input type="email" className="form-control form-control-lg" 
